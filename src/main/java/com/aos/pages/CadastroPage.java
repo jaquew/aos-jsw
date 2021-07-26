@@ -93,11 +93,10 @@ public class CadastroPage {
 		Assert.assertTrue("Validação campo Adress", cmpAdress.isDisplayed());
 		Assert.assertTrue("Validação campo City", cmpCity.isDisplayed());
 		Assert.assertTrue("Validação campo ZIP", cmpZip.isDisplayed());
-
+		swipeDown();
 		Assert.assertTrue("Validação link Sign Up", selLocation.isDisplayed());
 		Assert.assertTrue("Validação link Sign Up", chkOffers.isDisplayed());
 		Assert.assertTrue("Validação link Sign Up", chkAccept.isDisplayed());
-
 		Assert.assertTrue("Validação link Sign Up", btnRegister.isDisplayed());
 	}
 
@@ -125,7 +124,6 @@ public class CadastroPage {
 			listCountries = driver.findElementsByXPath("//*[@text = '"+country+"']");
 		}
 		listCountries.get(0).click();
-//		cmpState.click();
 		swipeDown();
 		cmpState.sendKeys(state);
 		cmpAdress.sendKeys(adress);
@@ -142,5 +140,4 @@ public class CadastroPage {
 				.release().perform();
 
 	}
-
 }
