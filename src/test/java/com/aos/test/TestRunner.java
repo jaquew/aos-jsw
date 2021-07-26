@@ -8,9 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features/Cadastro.feature", 
+		plugin ={"pretty"},
+		features = "src/test/resources/features/", 
 		glue = "com.aos.steps",
-//		tags = "@Login3",
 		monochrome = true
 		)
 public class TestRunner {

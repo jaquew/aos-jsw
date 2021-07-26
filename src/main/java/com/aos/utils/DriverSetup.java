@@ -14,6 +14,7 @@ public class DriverSetup {
 		dc.setCapability("udid", "8S00Q7103011ZN1199R00HP");
 		dc.setCapability("platformName", "Android");
 		dc.setCapability("platformVersion", "9");
+		dc.setCapability("newCommandTimeout", "600");
 		dc.setCapability("appPackage", "com.Advantage.aShopping");
 		dc.setCapability("appActivity", "com.Advantage.aShopping.SplashActivity");
 		

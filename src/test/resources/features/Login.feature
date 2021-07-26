@@ -10,7 +10,7 @@ Feature: Fazer Login com Dados de Acesso
 	  Given Que estou na tela de login	
 	  When Preencher meus dados de acesso	
 	  And Clicar no botao login	
-	  Then Valido o username da conta no menu
+	  Then Valido o username "branca" da conta no menu
   
  @Login3
 	  Scenario: Sair da conta do usuario logado	
