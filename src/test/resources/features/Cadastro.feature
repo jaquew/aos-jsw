@@ -10,6 +10,6 @@ Feature: Fazer Cadastro no App
 @Cadastro2
 		Scenario: Realizar o cadastro de um usuario	
 		Given Que estou na tela de cadastro	
-		When Preencher meus dados cadastrais user "maria3"	
+		When Preencher meus dados cadastrais user "mary3"	
 		And Clicar no botao Register	
-		Then Valido o username "maria3" da conta no menu
+		Then Valido o username "mary3" da conta no menu

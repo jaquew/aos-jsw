@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin ={"pretty"},
+		plugin ={"pretty" , "html:target/log.html"},
 		features = "src/test/resources/features/", 
 		glue = "com.aos.steps",
 		monochrome = true
